@@ -5,7 +5,10 @@ function Navbar() {
   const [openDrawer, setOpenDrawer] = useState(false);
   return (
     <div className="sticky top-0 bg-gray-200 h-20 text-2xl flex  justify-center font-semibold">
-      <div className="hidden  md:flex items-center justify-center space-x-10 lg:space-x-20 ">
+      <div className="absolute left-10 justify-center h-full flex items-center">
+        <p>Hotel Pride</p>
+      </div>
+      <div className="hidden  lg:flex items-center justify-center space-x-10 lg:space-x-12 xl:space-x-20 ">
         <p className="h-full flex items-center cursor-pointer">Home</p>
         <p className="h-full flex items-center cursor-pointer">Rooms</p>
         <p className="h-full flex items-center cursor-pointer">Gallery</p>
@@ -14,17 +17,17 @@ function Navbar() {
       </div>
 
       <AiOutlineMenu
-        className="absolute md:hidden top-8 right-10 cursor-pointer"
+        className="absolute lg:hidden top-8 right-10 cursor-pointer"
         onClick={() => setOpenDrawer(true)}
       ></AiOutlineMenu>
       <Drawer
         position="right"
         opened={openDrawer}
         hideCloseButton
-        transitionDuration={300}
+        transitionDuration={500}
         noFocusTrap
         shadow="lg"
-        transition="pop-top-right"
+        // transition="pop-top-right"
         onClose={() => setOpenDrawer(false)}
       >
         <div className="flex flex-col">
