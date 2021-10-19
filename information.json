@@ -1,0 +1,25 @@
+{
+    "main_info": "Hotel Pride, is just the answer to every business traveler’s need. Located in the happening suburb of Bhandup, the hotel has the advantage of being situated, just 10 minutes away from the business district of Powai, 20 minutes drive from the domestic and international airports, a kilometer from the Eastern Express Highway, walking distance from the suburban Bhandup Railway Station.",
+    "amenities": [
+        {
+            "icon": "FaCar",
+            "description": "Free Parking"
+        },
+        {
+            "icon": "FaWifi",
+            "description": "Free Wifi"
+        },
+        {
+            "icon": "FaSmoking",
+            "description": "Smoking rooms available"
+        },
+        {
+            "icon": "FaConciergeBell",
+            "description": "Concierge"
+        },
+        {
+            "icon": "MdPets",
+            "description": "Pets not allowed"
+        }
+    ]
+}

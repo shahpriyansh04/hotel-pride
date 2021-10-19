@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
+import ImageCarousel from "../components/ImageCarousel";
+import Info from "../components/Info";
 
 export default function Home() {
   return (
@@ -9,8 +11,10 @@ export default function Home() {
         {/* <meta tag="description">This is the site of Hotel Pride</meta> */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
+      <div className="flex items-center flex-col scrollbar-hide">
         <Navbar />
+        <ImageCarousel />
+        <Info />
       </div>
     </div>
   );

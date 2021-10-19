@@ -33,7 +33,7 @@ export default function App(props) {
           {/* NormalizeCSS and GlobalStyles are optional */}
           <NormalizeCSS />
           <GlobalStyles />
-          <Component {...pageProps} />
+          <Component {...pageProps} className="scrollbar-hide" />
         </MantineProvider>
       </SsrProvider>
     </>
