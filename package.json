@@ -8,7 +8,7 @@
   "dependencies": {
     "@mantine/core": "^2.5.1",
     "@mantine/hooks": "^2.5.1",
-    "daisyui": "^1.14.5",
+    "@svgr/webpack": "^5.5.0",
     "next": "latest",
     "pure-react-carousel": "^1.27.6",
     "react": "^17.0.2",

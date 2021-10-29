@@ -24,6 +24,7 @@ function Navbar() {
         position="right"
         opened={openDrawer}
         hideCloseButton
+        noScrollLock
         transitionDuration={500}
         noFocusTrap
         shadow="lg"
