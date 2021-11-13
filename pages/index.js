@@ -2,6 +2,8 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import ImageCarousel from "../components/ImageCarousel";
 import Info from "../components/Info";
+import RoomSection from "../components/RoomSection";
+import HotelPolicies from "../components/HotelPolicies";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
         <Navbar />
         <ImageCarousel />
         <Info />
+        <RoomSection />
+        <HotelPolicies />
       </div>
     </div>
   );

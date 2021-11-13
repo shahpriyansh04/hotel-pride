@@ -4,7 +4,7 @@ import { Drawer } from "@mantine/core";
 function Navbar() {
   const [openDrawer, setOpenDrawer] = useState(false);
   return (
-    <div className="sticky top-0 bg-gray-200 h-20 text-2xl flex  justify-center font-semibold w-full">
+    <div className="sticky z-100 top-0 bg-gray-200 h-20 text-2xl flex  justify-center font-semibold w-full">
       <div className="absolute left-10 justify-center h-full flex items-center">
         <p>Hotel Pride</p>
       </div>
