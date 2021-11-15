@@ -7,6 +7,7 @@ import {
   useStylesCleanup,
   SsrProvider,
 } from "@mantine/core";
+import Navbar from "../components/Navbar";
 
 export default function App(props) {
   const { Component, pageProps } = props;
@@ -17,11 +18,12 @@ export default function App(props) {
     <>
       <SsrProvider>
         <Head>
-          <title>Mantine next example</title>
+          <title>Hotel Pride</title>
           <meta
             name="viewport"
             content="minimum-scale=1, initial-scale=1, width=device-width"
-          />
+          />{" "}
+          <link rel="icon" href="/favicon.ico" />
         </Head>
 
         <MantineProvider
@@ -33,7 +35,8 @@ export default function App(props) {
           {/* NormalizeCSS and GlobalStyles are optional */}
           <NormalizeCSS />
           <GlobalStyles />
-          <Component {...pageProps} className="scrollbar-hide" />
+          <Navbar />
+          <Component {...pageProps} />
         </MantineProvider>
       </SsrProvider>
     </>
