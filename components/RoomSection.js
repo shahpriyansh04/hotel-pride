@@ -17,7 +17,7 @@ function RoomSection() {
 
   return (
     <div className="p-6 bg-gray-100 w-full flex justify-center">
-      <div className="w-4/5 sm:w-3/5 md:w-4/5 lg:w-3/5 xl:w-4/5 flex justify-center items-center flex-col space-y-4">
+      <div className="w-4/5 sm:w-3/5 md:w-4/5 lg:w-3/4 xl:w-3/5 flex justify-center items-center flex-col space-y-4">
         <p className="text-3xl sm:text-4xl font-bold">Rooms</p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 w-full">
