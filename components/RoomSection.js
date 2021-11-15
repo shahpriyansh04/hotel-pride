@@ -8,9 +8,7 @@ function RoomSection() {
           src="https://i.picsum.photos/id/717/256/256.jpg?hmac=rCl0DM-dRoiDZhBvcW6jt1P80NBijpfrsfZwJB0Tz9A"
           className="rounded-t-lg h-64 w-full"
         />
-        <p className=" w-full z-10 text-center p-4 text-2xl font-bold">
-          {text}
-        </p>
+        <p className=" w-full text-center p-4 text-2xl font-bold">{text}</p>
       </div>
     );
   };
