@@ -5,7 +5,7 @@ import { FaSmoking } from "react-icons/fa";
 import { MdPets } from "react-icons/md";
 function HotelPolicies() {
   return (
-    <div className="p-5 w-full sm:w-4/5 lg:w-3/4 xl:w-3/5 ">
+    <div className="p-5 mb-8 w-full sm:w-4/5 lg:w-3/4 xl:w-3/5 ">
       <h1 className="font-bold text-center">Hotel Policies</h1>
       <div className="">
         <Tabs
@@ -16,13 +16,20 @@ function HotelPolicies() {
           grow
         >
           <Tab label="Parking" icon={<AiFillCar size="xs" className="h-5 " />}>
-            Parking Policies
+            <ul className="list-disc text-lg lg:text-2xl font-semibold ml-4 space-y-4 mt-4">
+              <li>Self parking: complimentary</li>
+              <li>Valet parking: complimentary</li>
+            </ul>
           </Tab>
           <Tab label="Pets" icon={<MdPets size="xs" className="h-5" />}>
-            Pets Policies
+            <ul className="list-disc text-lg lg:text-2xl font-semibold ml-4 space-y-4 mt-4">
+              <li>Pets: Not allowed</li>
+            </ul>
           </Tab>
           <Tab label="Smoking" icon={<FaSmoking size="xs" className="h-5" />}>
-            Smoking Policies
+            <ul className="list-disc text-lg lg:text-2xl font-semibold ml-4 space-y-4 mt-4">
+              <li>Smoking rooms available</li>
+            </ul>{" "}
           </Tab>
         </Tabs>
       </div>

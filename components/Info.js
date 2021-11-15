@@ -77,7 +77,7 @@ c109 -68 90 -238 -32 -284 -120 -47 -241 58 -214 184 11 49 38 82 90 109 51
         <div className="flex-grow flex justify-center items-center  flex-col space-y-6 shadow-lg p-6">
           <p className="font-bold text-xl">TIMINGS</p>
           <div className="text-center flex text-md font-semibold flex-col space-y-">
-            <p>Check in -10am</p>
+            <p>Check in -12pm</p>
             <p>Check out -12pm</p>
           </div>
         </div>

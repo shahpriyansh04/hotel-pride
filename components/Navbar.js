@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Drawer } from "@mantine/core";
+import Link from "next/link";
+import { useRouter } from "next/router";
 function Navbar() {
+  const router = useRouter();
+  console.log(router.pathname);
   const [openDrawer, setOpenDrawer] = useState(false);
   return (
     <div className="sticky z-100 top-0 bg-gray-200 h-20 text-2xl flex  justify-center font-semibold w-full">
@@ -9,10 +13,14 @@ function Navbar() {
         <p>Hotel Pride</p>
       </div>
       <div className="hidden  lg:flex items-center justify-center space-x-10 lg:space-x-12 xl:space-x-20 ">
-        <p className="h-full flex items-center cursor-pointer">Home</p>
+        <Link href="/">
+          <p className="h-full flex items-center cursor-pointer">Home</p>
+        </Link>
         <p className="h-full flex items-center cursor-pointer">Rooms</p>
         <p className="h-full flex items-center cursor-pointer">Gallery</p>
-        <p className="h-full flex items-center cursor-pointer">Location</p>
+        <Link href="/location">
+          <p className="h-full flex items-center cursor-pointer">Location</p>
+        </Link>
         <p className="h-full flex items-center cursor-pointer">Contact us</p>
       </div>
 

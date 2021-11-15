@@ -7,14 +7,13 @@ import HotelPolicies from "../components/HotelPolicies";
 
 export default function Home() {
   return (
-    <div>
+    <div className="">
       <Head>
         <title>Hotel Pride</title>
         {/* <meta tag="description">This is the site of Hotel Pride</meta> */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex items-center flex-col scrollbar-hide">
-        <Navbar />
+      <div className="flex items-center flex-col ">
         <ImageCarousel />
         <Info />
         <RoomSection />
