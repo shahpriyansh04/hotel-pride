@@ -61,8 +61,8 @@ c109 -68 90 -238 -32 -284 -120 -47 -241 58 -214 184 11 49 38 82 90 109 51
         <div className="flex-grow flex justify-center items-center justify-items-center flex-col space-y-6 shadow-lg p-6 rounded-lg">
           <p className="font-bold text-xl">CONTACT</p>
           <div className="flex text-md font-semibold flex-col space-y-1 ">
-            <p>+912279660926</p>
-            <p>+919819914047</p>
+            <p>2279660926</p>
+            <p>9819914047</p>
           </div>
         </div>
         <div className="flex items-center shadow-lg p-6">
