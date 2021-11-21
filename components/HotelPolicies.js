@@ -5,7 +5,7 @@ import { FaSmoking } from "react-icons/fa";
 import { MdPets } from "react-icons/md";
 function HotelPolicies() {
   return (
-    <div className="p-5 mb-8 w-full sm:w-4/5 lg:w-3/4 xl:w-3/5 ">
+    <div className="h-[16rem] mb-5 w-full sm:w-4/5 lg:w-3/4 xl:w-3/5 ">
       <h1 className="font-bold text-center">Hotel Policies</h1>
       <div className="">
         <Tabs

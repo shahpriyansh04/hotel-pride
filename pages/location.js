@@ -13,8 +13,25 @@ function Location() {
           loading="lazy"
         ></iframe>
       </div>
-      <div className="mt-12">
+      <div className="mt-12 w-4/5 py-12">
         <h1 className="font-bold text-center">What's Nearby</h1>
+        <div>
+          <ul className="list-disc list-inside font-semibold text-2xl">
+            <li>
+              Bhandup Railway Station: 1km
+              </li>
+              <li>
+                Neptune Manget Mall: 1km
+              </li>
+             <li>
+             RCity Mall: 6km
+              </li><li>
+                Powai: 6km
+              </li><li>
+                Airport: 15km
+              </li>
+              </ul>
+        </div>
       </div>
     </div>
   );

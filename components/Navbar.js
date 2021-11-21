@@ -49,10 +49,14 @@ function Navbar() {
           </div>
 
           <div className="flex flex-col items-center justify-start space-y-6 cursor-pointer text-2xl font-semibold mt-10 ">
-            <p className="">Home</p>
+            <Link href="/">
+            <p className=""  onClick={()=> setOpenDrawer(false)}>Home</p>
+              </Link>
             <p>Rooms</p>
             <p>Gallery</p>
-            <p>Location</p>
+            <Link href="/location">
+            <p  onClick={()=> setOpenDrawer(false)}>Location</p>
+              </Link>
             <p>Contact</p>
           </div>
         </div>
