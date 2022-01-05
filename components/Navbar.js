@@ -32,7 +32,8 @@ function Navbar() {
         position="right"
         opened={openDrawer}
         hideCloseButton
-        noScrollLock
+        // noScrollLock
+        noCloseOnClickOutside
         transitionDuration={500}
         noFocusTrap
         shadow="lg"
@@ -50,14 +51,18 @@ function Navbar() {
 
           <div className="flex flex-col items-center justify-start space-y-6 cursor-pointer text-2xl font-semibold mt-10 ">
             <Link href="/">
-            <p className=""  onClick={()=> setOpenDrawer(false)}>Home</p>
-              </Link>
+              <p className="" onClick={() => setOpenDrawer(false)}>
+                Home
+              </p>
+            </Link>
             <p>Rooms</p>
             <p>Gallery</p>
             <Link href="/location">
-            <p  onClick={()=> setOpenDrawer(false)}>Location</p>
-              </Link>
-            <p>Contact</p>
+              <p onClick={() => setOpenDrawer(false)}>Location</p>
+            </Link>
+            <Link href="/contact">
+              <p onClick={() => setOpenDrawer(false)}>Contact</p>
+            </Link>
           </div>
         </div>
       </Drawer>

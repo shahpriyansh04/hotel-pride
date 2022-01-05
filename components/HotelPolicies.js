@@ -7,7 +7,7 @@ function HotelPolicies() {
   return (
     <div className="h-[16rem] mb-5 w-full sm:w-4/5 lg:w-3/4 xl:w-3/5 ">
       <h1 className="font-bold text-center">Hotel Policies</h1>
-      <div className="">
+      <div className="mx-3">
         <Tabs
           color="dark"
           variant="pills"
