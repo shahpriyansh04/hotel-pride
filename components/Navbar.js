@@ -16,7 +16,9 @@ function Navbar() {
         <Link href="/">
           <p className="h-full flex items-center cursor-pointer">Home</p>
         </Link>
-        <p className="h-full flex items-center cursor-pointer">Rooms</p>
+        <Link href="/rooms">
+          <p className="h-full flex items-center cursor-pointer">Rooms</p>
+        </Link>
         <p className="h-full flex items-center cursor-pointer">Gallery</p>
         <Link href="/location">
           <p className="h-full flex items-center cursor-pointer">Location</p>
@@ -55,7 +57,9 @@ function Navbar() {
                 Home
               </p>
             </Link>
-            <p>Rooms</p>
+            <Link href="/rooms">
+              <p onClick={() => setOpenDrawer(false)}>Rooms</p>
+            </Link>
             <p>Gallery</p>
             <Link href="/location">
               <p onClick={() => setOpenDrawer(false)}>Location</p>
