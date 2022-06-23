@@ -1,44 +1,31 @@
 import "tailwindcss/tailwind.css";
-import Head from "next/head";
-import {
-  MantineProvider,
-  NormalizeCSS,
-  GlobalStyles,
-  useStylesCleanup,
-  SsrProvider,
-} from "@mantine/core";
+import { AppProps } from 'next/app';
+import Head from 'next/head';
+import { MantineProvider } from '@mantine/core';
 import Navbar from "../components/Navbar";
 
 export default function App(props) {
   const { Component, pageProps } = props;
 
-  useStylesCleanup();
-
   return (
     <>
-      <SsrProvider>
-        <Head>
-          <title>Hotel Pride</title>
-          <meta
-            name="viewport"
-            content="minimum-scale=1, initial-scale=1, width=device-width"
-          />{" "}
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
+      <Head>
+        <title>Page title</title>
+        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
+      </Head>
 
-        <MantineProvider
-          theme={{
-            /* Put your mantine theme override here */
-            colorScheme: "light",
-          }}
-        >
-          {/* NormalizeCSS and GlobalStyles are optional */}
-          <NormalizeCSS />
-          <GlobalStyles />
-          <Navbar />
-          <Component {...pageProps} />
-        </MantineProvider>
-      </SsrProvider>
+      <MantineProvider
+        withGlobalStyles
+        withNormalizeCSS
+        theme={{
+          /** Put your mantine theme override here */
+          colorScheme: 'light',
+        }}
+      >    <Navbar />
+        <Component {...pageProps} />
+    
+
+      </MantineProvider>
     </>
   );
 }

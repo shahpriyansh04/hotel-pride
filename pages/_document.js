@@ -1,41 +1,15 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
-import { SsrProvider, SheetsRegistry, ServerStyles } from "@mantine/core";
+import { createGetInitialProps } from '@mantine/next';
+import Document, { Head, Html, Main, NextScript } from 'next/document';
+
+const getInitialProps = createGetInitialProps();
 
 export default class _Document extends Document {
-  static async getInitialProps(ctx) {
-    const registry = new SheetsRegistry();
-    const originalRenderPage = ctx.renderPage;
-
-    ctx.renderPage = () =>
-      originalRenderPage({
-        // eslint-disable-next-line react/display-name
-        enhanceApp: (App) => (props) =>
-          (
-            <SsrProvider registry={registry}>
-              <App {...props} />
-            </SsrProvider>
-          ),
-      });
-
-    const initialProps = await Document.getInitialProps(ctx);
-
-    return {
-      ...initialProps,
-      styles: (
-        <>
-          {initialProps.styles}
-          <ServerStyles registry={registry} />
-        </>
-      ),
-    };
-  }
+  static getInitialProps = getInitialProps;
 
   render() {
     return (
       <Html>
-        <Head>
-          <link rel="icon" href="link to favicon" />
-        </Head>
+        <Head />
         <body>
           <Main />
           <NextScript />

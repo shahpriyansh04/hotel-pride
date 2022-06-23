@@ -33,11 +33,11 @@ function Navbar() {
       <Drawer
         position="right"
         opened={openDrawer}
-        hideCloseButton
         // noScrollLock
         noCloseOnClickOutside
         transitionDuration={500}
         noFocusTrap
+        withCloseButton={false}
         shadow="lg"
         // transition="pop-top-right"
         onClose={() => setOpenDrawer(false)}
