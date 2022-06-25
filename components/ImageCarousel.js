@@ -4,10 +4,7 @@ import { Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay } from 's
 import 'swiper/css/pagination';
 import Image from 'next/image'
 import 'swiper/css/autoplay';
-import CarouselImage1 from './images/IMAGE_CAROUSEL/IC_4.jpg'
-import CarouselImage2 from './images/IMAGE_CAROUSEL/IC.jpg'
-import CarouselImage3 from './images/IMAGE_CAROUSEL/Image_Carousel.jpg'
-import CarouselImage4 from './images/IMAGE_CAROUSEL/Image_Carousel_1.jpg'
+
 
 // Import Swiper styles
 import 'swiper/css';
